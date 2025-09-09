@@ -1,0 +1,14 @@
+/home/thatim/Desktop/drawing/target/debug/deps/png-bccfb024302b0ee7.d: /home/thatim/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/png-0.5.2/src/lib.rs /home/thatim/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/png-0.5.2/src/chunk.rs /home/thatim/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/png-0.5.2/src/crc.rs /home/thatim/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/png-0.5.2/src/decoder/mod.rs /home/thatim/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/png-0.5.2/src/decoder/stream.rs /home/thatim/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/png-0.5.2/src/encoder.rs /home/thatim/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/png-0.5.2/src/filter.rs /home/thatim/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/png-0.5.2/src/traits.rs /home/thatim/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/png-0.5.2/src/common.rs /home/thatim/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/png-0.5.2/src/utils.rs
+
+/home/thatim/Desktop/drawing/target/debug/deps/libpng-bccfb024302b0ee7.rmeta: /home/thatim/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/png-0.5.2/src/lib.rs /home/thatim/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/png-0.5.2/src/chunk.rs /home/thatim/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/png-0.5.2/src/crc.rs /home/thatim/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/png-0.5.2/src/decoder/mod.rs /home/thatim/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/png-0.5.2/src/decoder/stream.rs /home/thatim/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/png-0.5.2/src/encoder.rs /home/thatim/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/png-0.5.2/src/filter.rs /home/thatim/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/png-0.5.2/src/traits.rs /home/thatim/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/png-0.5.2/src/common.rs /home/thatim/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/png-0.5.2/src/utils.rs
+
+/home/thatim/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/png-0.5.2/src/lib.rs:
+/home/thatim/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/png-0.5.2/src/chunk.rs:
+/home/thatim/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/png-0.5.2/src/crc.rs:
+/home/thatim/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/png-0.5.2/src/decoder/mod.rs:
+/home/thatim/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/png-0.5.2/src/decoder/stream.rs:
+/home/thatim/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/png-0.5.2/src/encoder.rs:
+/home/thatim/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/png-0.5.2/src/filter.rs:
+/home/thatim/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/png-0.5.2/src/traits.rs:
+/home/thatim/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/png-0.5.2/src/common.rs:
+/home/thatim/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/png-0.5.2/src/utils.rs:
