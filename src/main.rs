@@ -13,7 +13,10 @@ fn main() {
     for _ in 0..50 {
         geometrical_shapes::Circle::random(image.width, image.height).draw(&mut image);
     }
-
+    //draw lines
+    for _ in 0..50 {
+        geometrical_shapes::Line::random(image.width, image.height).draw(&mut image);
+    }
     raster::save(&image, "image.png").expect("Failed to save image");
 }
 
