@@ -21,7 +21,7 @@ pub trait Displayable {
 }
 
 // ------------------------------------------------------------------------ Point ---
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Copy)]
 pub struct Point {
     pub x: i32,
     pub y: i32,
@@ -155,6 +155,95 @@ impl Drawable for Line {
                 err += dx;
                 y0 += sy;
             }
+        }
+    }
+}
+
+// ------------------------------------------------------------------------ RECTANGLE ---
+#[derive(Debug, Clone)]
+pub struct Rectangle {
+    pub points: [Point;4],
+    pub color: Color,
+}
+
+impl Rectangle {
+    pub fn new(start: Point, end: Point) -> Self {
+        let mut rng = rand::thread_rng();
+        let color = Color::rgb(
+            rng.gen_range(1..=255),
+            rng.gen_range(1..=255),
+            rng.gen_range(1..=255),
+        );
+        
+        Rectangle { points:[start,
+            Point::new(start.x,end.y),
+            end,
+            Point::new(end.x,start.y),
+            ], color:color }
+    }
+
+    pub fn random(width: i32, height: i32) -> Self {
+        Rectangle::new(
+            Point::random(width, height),
+            Point::random(width, height),
+        )
+    }
+}
+
+impl Drawable for Rectangle {
+    fn draw(&self, image: &mut dyn Displayable) {
+        let lines = [
+            Line::new(self.points[0], self.points[1]),
+            Line::new(self.points[1], self.points[2]),
+            Line::new(self.points[2], self.points[3]),
+            Line::new(self.points[3], self.points[0]),
+        ];
+        for mut line in lines {
+            line.color = self.color.clone();
+            line.draw(image);
+        }
+    }
+}
+
+
+// ------------------------------------------------------------------------ TRIANGE ---
+
+pub struct Triangle {
+    pub points : [Point;3],
+    pub color: Color,
+}
+
+impl Triangle {
+    pub fn new(a: Point, b: Point, c: Point) -> Self {
+        let mut rng = rand::thread_rng();
+        let color = Color::rgb(
+            rng.gen_range(1..=255),
+            rng.gen_range(1..=255),
+            rng.gen_range(1..=255),
+        );
+        
+        Triangle { points:[a,b,c], color:color }
+    }
+
+    pub fn random(width: i32, height: i32) -> Self {
+        Triangle::new(
+            Point::random(width, height),
+            Point::random(width, height),
+            Point::random(width, height),
+        )
+    }
+}
+
+impl Drawable for Triangle {
+    fn draw(&self, image: &mut dyn Displayable) {
+        let lines = [
+            Line::new(self.points[0], self.points[1]),
+            Line::new(self.points[1], self.points[2]),
+            Line::new(self.points[2], self.points[0]),
+        ];
+        for mut line in lines {
+            line.color = self.color.clone();
+            line.draw(image);
         }
     }
 }
