@@ -14,15 +14,15 @@ fn main() {
         geometrical_shapes::Circle::random(image.width, image.height).draw(&mut image);
     }
     //draw lines
-    for _ in 0..50 {
+    for _ in 0..5 {
         geometrical_shapes::Line::random(image.width, image.height).draw(&mut image);
     }
     //draw rectangles
-    for _ in 0..50 {
+    for _ in 0..5 {
         geometrical_shapes::Rectangle::random(image.width, image.height).draw(&mut image);
     }
     //draw triangles
-    for _ in 0..50 {
+    for _ in 0..5 {
         geometrical_shapes::Triangle::random(image.width, image.height).draw(&mut image);
     }
     raster::save(&image, "image.png").expect("Failed to save image");
